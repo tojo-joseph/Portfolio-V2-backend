@@ -9,7 +9,9 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT || 3002;
 
-const allowedDomains = ["http://localhost:3000"];
+const allowedDomains = [
+  "https://portfolio-v2-tojo-josephs-projects.vercel.app",
+];
 const corsOptions = {
   origin: (origin: any, callback: any) => {
     if (!origin || allowedDomains.includes(origin)) {
