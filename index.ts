@@ -11,6 +11,7 @@ const port = process.env.PORT || 3002;
 
 const allowedDomains = [
   "https://portfolio-v2-tojo-josephs-projects.vercel.app",
+  "https://portfolio-v2-git-main-tojo-josephs-projects.vercel.app",
 ];
 const corsOptions = {
   origin: (origin: any, callback: any) => {
