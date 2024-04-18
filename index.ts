@@ -23,7 +23,13 @@ const corsOptions = {
   },
 };
 
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: ["https://portfolio-v2-tojo-josephs-projects.vercel.app"],
+    methods: ["GET"],
+    credentials: true,
+  })
+);
 app.use(express.json({ limit: "5mb" }));
 
 app.get("/", (req: Request, res: Response) => {

@@ -25,7 +25,11 @@ const corsOptions = {
         }
     },
 };
-app.use((0, cors_1.default)(corsOptions));
+app.use((0, cors_1.default)({
+    origin: ["https://portfolio-v2-tojo-josephs-projects.vercel.app"],
+    methods: ["GET"],
+    credentials: true,
+}));
 app.use(express_1.default.json({ limit: "5mb" }));
 app.get("/", (req, res) => {
     res.send("Hello World");
