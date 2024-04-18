@@ -7,7 +7,7 @@ import { router } from "./src/routes/routes";
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 3026;
 
 const allowedDomains = [
   "https://portfolio-v2-tojo-josephs-projects.vercel.app",

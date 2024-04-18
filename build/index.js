@@ -10,11 +10,8 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const routes_1 = require("./src/routes/routes");
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-const port = process.env.PORT || 3002;
-const allowedDomains = [
-    "https://portfolio-v2-tojo-josephs-projects.vercel.app",
-    "https://portfolio-v2-git-main-tojo-josephs-projects.vercel.app",
-];
+const port = process.env.PORT || 3026;
+const allowedDomains = ["http://localhost:3000"];
 const corsOptions = {
     origin: (origin, callback) => {
         if (!origin || allowedDomains.includes(origin)) {
