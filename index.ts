@@ -27,6 +27,7 @@ app.use(
   cors({
     origin: ["https://portfolio-v2-tojo-josephs-projects.vercel.app"],
     methods: ["GET"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
 );

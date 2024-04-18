@@ -28,6 +28,7 @@ const corsOptions = {
 app.use((0, cors_1.default)({
     origin: ["https://portfolio-v2-tojo-josephs-projects.vercel.app"],
     methods: ["GET"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
 }));
 app.use(express_1.default.json({ limit: "5mb" }));
